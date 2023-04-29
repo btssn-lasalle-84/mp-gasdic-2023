@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <title>GASDIC</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="poubelle.ico" type="image/x-icon">
+    <link rel="stylesheet" href="stylesheet1.css">
+    <head>
+    <nav>
+        <ul>
+            <li class="menu-deroulant">
+                <a href="#"></a>
+                <ul class="sous-menu">
+                    <li><a href="info.html">Informations</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href="contact.html">Contact</a></a></li>
+                </ul>
+            </li>
+            <li><h1>GASDIC</h1></li> 
+            <a href="GASDIC.php"><img id="logo" src="ordures.png" style="width: 150" height= "150" ></a>
+        </ul>
+    <footer>
+        <table border="2", align="bottom">
+            <thead>
+                <tr>
+                    <th colspan="2">Requête :</th>
+                </tr>
+                <br>
+            </thead>
+            <tbody>
+                <tr>
+                    <div class="box"></div>
+                    <td align="center"><label for="ville">Ville :</label></td>
+                    <td><div><input type="text" id="ville" name="ville" placeholder="Ex : Avignon"></div></td>
+                </tr>
+                <tr>
+                    <td align="center"><label for="codepostal">Code postal :</label></td>
+                        <td><div><input type="number" id="codepostal" name="codepostal" placeholder="Ex : 84000"></div></td>
+                </tr>
+                <tr>
+                    <td align="center"><label for="adresse">Adresse du bâtiment :</label></td>
+                    <td><div><input type="text" id="adresse" name="adresse"></div></td>
+                </tr>
+                <tr>
+                    <td align="center"><label for="nomBat">Nom du bâtiment :</label></td>
+                    <td><div><input type="text" id="nomBat" name="nomBat"></div></td>
+                </tr>
+                <tr>
+                    <td align="center"><label for="email">Pour vous contacter :</label></td>
+                    <td><div><input type="email" id="email" name="email" placeholder="courriel@exemple.com"></div></td>
+                </tr>
+                <tr>
+                    <td align="center"><label for="infoSup">Votre Problème :</label></td>
+                    <td><div><input type="text" id="infoSup" name="infoSup"></div></td>
+                </tr>
+                </tbody>
+        </table>
+        <form method="post" href="requete.php">
+            <input type="button" value="Envoyer les données">
+        </form>
+    </footer>
+        </html>

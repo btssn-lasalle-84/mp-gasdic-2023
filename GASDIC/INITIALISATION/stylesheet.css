@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    vertical-align: auto;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 580px;
+    margin-right: auto;
+    position: relative;
+    width: 41em;
+    height: 25px;
+    border-radius: 18px;
+    
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+}
+
+body{
+   margin-left: 200px;
+   margin-right: auto;
+   background-color: aqua;
+}
+
+head {
+    background-color: red;
+}

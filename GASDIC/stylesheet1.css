@@ -1,0 +1,213 @@
+:root{
+    --hauteur-menu: 60px;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+  }
+  nav {
+    width: 100%;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+  }
+
+  nav > ul {
+    display: flex;
+    text-align: left;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+    height: var(--hauteur-menu);
+  }
+
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav > ul > li {
+    background-color: rgb(212, 200, 200);
+    position: relative;
+    height: 101%;
+    flex: 1;
+  }
+
+  nav > ul > li > a {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }
+  nav > ul > li > ul >li {
+    text-align: center;
+  }
+  li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu-deroulant > a:after{
+    content: '❯';
+    font-size: 15px;
+    margin-left: 1px;
+    display: inline-block;
+  }
+
+  .sous-menu {
+    margin-top: var(--hauteur-menu);
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+  }
+  
+  .sous-menu > li > a {
+    height: 50px;
+    padding-left: 20px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+  }
+
+  nav > ul > li:hover > a{
+    color: #ec2121;
+  }
+
+  .sous-menu > li:hover {
+    background-color: rgba(33, 105, 236, 0.3);
+  }
+  
+  .sous-menu > li:hover > a {
+    color: white;
+  }
+  
+  @keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(90deg);
+    }
+  }
+  
+  .menu-deroulant:hover > a:after{
+    animation: rotationFleche 0.2s linear forwards;
+  }
+
+  @keyframes apparitionSousMenu {
+    0% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+      border-top: 3px solid #ec2121;
+    }
+    30% {
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+    100% {
+      max-height: 50em;
+      border-top: 3px solid #ec2121;
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+  }
+
+  .menu-deroulant:hover > .sous-menu {
+    animation: apparitionSousMenu 1s forwards;
+    background-color: rgb(202, 189, 189);
+    width: 25%;
+  }
+  body {
+      background-image:  radial-gradient(circle at 50% 50%, #c7dfcd 0, #c4e0d0 3.33%, #c1e0d4 6.67%, #bee1d7 10%, #bce1da 13.33%, #bbe1de 16.67%, #bae1e1 20%, #bae0e4 23.33%, #bae0e7 26.67%, #bbdfea 30%, #bddfec 33.33%, #bfdeee 36.67%, #c2ddf0 40%, #c5dcf1 43.33%, #c9dbf2 46.67%, #cddaf2 50%, #d1d9f2 53.33%, #d5d8f1 56.67%, #dad7f0 60%, #ded6ee 63.33%, #e2d5ec 66.67%, #e6d4ea 70%, #e9d3e7 73.33%, #ecd2e4 76.67%, #efd1e1 80%, #f1d1dd 83.33%, #f3d1da 86.67%, #f4d1d6 90%, #f4d1d3 93.33%, #f4d1d0 96.67%, #f4d2cd 100%);
+  }
+  button {
+    background-color: rgb(255, 147, 5);
+    color: rgb(0, 0, 0);
+    padding-top: 1px;
+   max-width: 970px;
+   height: 30px;
+   float: right;
+  }
+  h1 {
+    margin-top: 15px;
+  }
+  nav #poubelle {
+    float: right;
+  }
+  .logo {
+    float: right;
+    width: 50px;
+    height: 50px;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 300px;
+  }*
+  h3 {
+    text-align: center;
+  }
+  footer {
+    width: 700px;
+    height: 500px;
+    margin-left: 650px;
+    margin-top: 100px;
+  }
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(36, 59, 56);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+.styled:hover {
+    background-color: rgb(36, 59, 56);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.bouton {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+.tableau {
+  align-content: center;
+  background-color: gray;
+  margin-left: 100px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-item {
+  margin: 10px;
+  border: 2px solid gray;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.progress-bar {
+  height: 75%;
+  width: 75%;
+  background-color: lightgray;
+  position: relative;
+}
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: var(--value);
+  background-color: gray;
+}
+#nomBat {
+  text-align: center;
+}
